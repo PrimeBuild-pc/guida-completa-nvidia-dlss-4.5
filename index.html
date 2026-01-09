@@ -417,21 +417,36 @@
         <div class="card">
             <h3>1. NVIDIA App (Consigliato - Facile/Automatico)</h3>
             <p><strong>Ideale per:</strong> Utenti che vogliono configurazioni rapide e affidabili senza complessità.</p>
-            <ul>
-                <li>📥 Aggiorna driver <strong>591.74+</strong></li>
-                <li>⚙️ Apri <strong>NVIDIA App</strong> > Graphics > <strong>DLSS Overrides</strong></li>
-                <li>🎯 <strong>Super Resolution Mode</strong>: Seleziona Quality/Balanced/Performance/Ultra Performance/DLAA
-                    <br><em style="font-size: 0.9rem; color: var(--text-secondary);">→ L'App auto-seleziona il preset corretto (K per Quality, M per Performance, L per Ultra)</em>
-                </li>
-                <li>🔧 <strong>Model Presets</strong>: 
+            
+            <h4 style="color: var(--accent-orange); margin-top: 25px;">Procedura Completa:</h4>
+            <ol style="padding-left: 20px; color: var(--text-secondary);">
+                <li style="margin-bottom: 15px;">📥 <strong>Aggiorna i driver</strong> alla versione <strong>591.74 o successiva</strong></li>
+                <li style="margin-bottom: 15px;">🖥️ <strong>Apri NVIDIA App</strong> (non GeForce Experience) dal menu Start o dalla system tray</li>
+                <li style="margin-bottom: 15px;">⚙️ Vai su <strong>Graphics</strong> dalla barra laterale sinistra</li>
+                <li style="margin-bottom: 15px;">📊 Scorri fino alla sezione <strong>"DLSS Overrides"</strong></li>
+                <li style="margin-bottom: 15px;">🎮 Seleziona il <strong>gioco specifico</strong> dal menu dropdown in alto (o applica globalmente)</li>
+                <li style="margin-bottom: 15px;">🎯 Configura le opzioni:
                     <ul style="margin-top: 10px; padding-left: 20px;">
-                        <li><strong>Custom</strong>: Scegli manualmente K/M/L</li>
-                        <li><strong>Latest</strong>: Forza preset M (attenzione: non sempre ideale)</li>
+                        <li><strong>Super Resolution Mode</strong>: Scegli tra Quality/Balanced/Performance/Ultra Performance/DLAA<br>
+                        <em style="font-size: 0.85rem;">→ L'App seleziona automaticamente il preset ottimale (K per Quality, M per Performance, L per Ultra)</em></li>
+                        <li><strong>Model Presets</strong>: 
+                            <ul style="margin-top: 5px;">
+                                <li><strong>Default</strong>: Lascia decidere all'App (consigliato)</li>
+                                <li><strong>Custom</strong>: Forza manualmente K/M/L</li>
+                                <li><strong>Latest</strong>: Forza preset M su tutto (⚠️ non sempre ideale)</li>
+                            </ul>
+                        </li>
                     </ul>
                 </li>
-                <li>🌐 Applica <strong>globalmente</strong> o <strong>per-gioco</strong></li>
-                <li>🔄 Riavvia il gioco per applicare le modifiche</li>
-            </ul>
+                <li style="margin-bottom: 15px;">💾 Clicca <strong>"Apply"</strong> per salvare</li>
+                <li>🔄 <strong>Riavvia il gioco</strong> per applicare le modifiche</li>
+            </ol>
+
+            <div style="background: #0a0a0a; border-radius: 8px; overflow: hidden; margin-top: 25px; padding: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.6);">
+                <p style="margin: 0 0 10px 0; color: var(--accent-orange); font-weight: bold;">📸 Esempio Configurazione:</p>
+                <img src="https://i.postimg.cc/W3cBJB02/Screenshot-2026-01-09-010904.png" alt="NVIDIA App - DLSS Overrides" style="width: 100%; border-radius: 5px; border: 1px solid var(--border-dark);">
+                <p style="margin: 10px 0 0 0; font-size: 0.85rem; color: var(--text-secondary);"><em>Nell'immagine: menu DLSS Overrides con opzioni Super Resolution Mode e Model Presets. Nota i dropdown per selezionare gioco specifico e modalità DLSS.</em></p>
+            </div>
         </div>
 
         <div class="card">
@@ -445,20 +460,47 @@
 
             <h4 style="color: var(--accent-orange); margin-top: 25px;">Configurazione Step-by-Step:</h4>
             <ol style="padding-left: 20px; color: var(--text-secondary);">
-                <li style="margin-bottom: 15px;"><strong>Apri Profile Inspector</strong> e seleziona il profilo del gioco dalla lista dropdown</li>
-                <li style="margin-bottom: 15px;">Naviga a <strong>Section 5 - Common</strong> (scroll nella lista settings)</li>
-                <li style="margin-bottom: 15px;"><strong>Impostazioni Chiave:</strong>
+                <li style="margin-bottom: 15px;">📥 <strong>Scarica e apri</strong> NVIDIA Profile Inspector (nvidiaProfileInspector.exe)</li>
+                <li style="margin-bottom: 15px;">🔍 <strong>Cerca il tuo gioco</strong>:
                     <ul style="margin-top: 10px; padding-left: 20px;">
-                        <li><span class="accent-text">DLSS - Enable DLL Override</span>: Attiva per usare DLL 310.5+ (mostra versione es. "v310.5.0")</li>
-                        <li><span class="accent-text">DLSS - Forced Preset Letter</span>: Inserisci <strong>K</strong>, <strong>M</strong> o <strong>L</strong> (testuale) per forzare un preset specifico</li>
-                        <li><span class="accent-text">DLSS - Model Preset</span>: Alternativa, usa valori <strong>hex</strong> (K=0x0000000B, J=0x0000000A)</li>
-                        <li><span class="accent-text">DLSS - Always Use Latest</span>: Imposta <strong>0x00000001</strong> per auto-selezione (equivalente a "Latest" in App)</li>
+                        <li>Usa il campo <strong>"Profiles"</strong> in alto per cercare (es. digita "Cyberpunk")</li>
+                        <li>Oppure scorri la lista dropdown per trovare il profilo del gioco</li>
+                        <li>Se il gioco non ha profilo, seleziona <strong>"Base Profile"</strong> per applicare globalmente</li>
                     </ul>
                 </li>
-                <li style="margin-bottom: 15px;">Clicca <strong>"Apply changes"</strong> in alto a destra</li>
-                <li style="margin-bottom: 15px;"><strong>Riavvia il driver</strong> (opzionale ma consigliato): <kbd>Ctrl+Shift+Win+B</kbd></li>
-                <li>Lancia il gioco e verifica il preset attivo</li>
+                <li style="margin-bottom: 15px;">📂 <strong>Naviga a Section 5 - Common</strong>:
+                    <ul style="margin-top: 10px; padding-left: 20px;">
+                        <li>Guarda la lista delle sezioni sulla sinistra</li>
+                        <li>Clicca su <strong>"5 - Common"</strong> per espandere le impostazioni DLSS</li>
+                        <li>Se non vedi le opzioni DLSS, usa <kbd>Ctrl+F</kbd> per cercare "DLSS"</li>
+                    </ul>
+                </li>
+                <li style="margin-bottom: 20px;"><strong>⚙️ Configura le Impostazioni DLSS</strong> (vedi screenshot sotto):
+                    <ul style="margin-top: 10px; padding-left: 20px;">
+                        <li><span class="accent-text">DLSS - Enable DLL Override</span>: Imposta su <strong>0x00000001</strong> per attivare<br>
+                        <em style="font-size: 0.85rem;">→ Mostra la versione DLL (es. "v310.5.0") se disponibile</em></li>
+                        <li><span class="accent-text">DLSS - Forced Preset Letter</span>: Inserisci la lettera del preset:<br>
+                        • <strong>K</strong> = Quality/Balanced/DLAA (RTX 20+)<br>
+                        • <strong>M</strong> = Performance (RTX 40/50)<br>
+                        • <strong>L</strong> = Ultra Performance 4K (RTX 40/50)</li>
+                        <li><span class="accent-text">DLSS - Model Preset</span>: Alternativa, usa valori <strong>hex</strong>:<br>
+                        • K = <strong>0x0000000B</strong><br>
+                        • J = <strong>0x0000000A</strong></li>
+                        <li><span class="accent-text">DLSS - Always Use Latest</span>: <strong>0x00000001</strong> per auto-selezione (come "Latest" in App)<br>
+                        <em style="font-size: 0.85rem;">⚠️ Attenzione: forza preset M su tutto, può penalizzare Quality mode</em></li>
+                    </ul>
+                </li>
+                <li style="margin-bottom: 15px;">💾 Clicca <strong>"Apply changes"</strong> (icona dischetto) in alto a destra</li>
+                <li style="margin-bottom: 15px;">🔄 <strong>Riavvia il driver grafico</strong> (opzionale ma consigliato): <kbd>Ctrl+Shift+Win+B</kbd><br>
+                <em style="font-size: 0.85rem;">→ Lo schermo lampeggia per 1-2 secondi, è normale</em></li>
+                <li>🎮 <strong>Lancia il gioco</strong> e verifica il preset attivo (vedi sezione "Verifica" sotto)</li>
             </ol>
+
+            <div style="background: #0a0a0a; border-radius: 8px; overflow: hidden; margin-top: 25px; padding: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.6);">
+                <p style="margin: 0 0 10px 0; color: var(--accent-orange); font-weight: bold;">📸 Esempio Configurazione in Profile Inspector:</p>
+                <img src="https://i.postimg.cc/YSFc0rGG/Screenshot-2026-01-09-010816.png" alt="NVIDIA Profile Inspector - DLSS Settings" style="width: 100%; border-radius: 5px; border: 1px solid var(--border-dark);">
+                <p style="margin: 10px 0 0 0; font-size: 0.85rem; color: var(--text-secondary);"><em>Nell'immagine: Section 5 - Common con le impostazioni DLSS evidenziate. Nota i campi "DLSS - Enable DLL Override", "DLSS - Forced Preset Letter" e gli altri parametri configurabili.</em></p>
+            </div>
 
             <div class="card card-note" style="margin-top: 20px;">
                 <strong style="color: var(--accent-orange);">💡 Novità v2.4.0.30:</strong>
