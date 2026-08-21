@@ -1,18 +1,23 @@
-# 🎮 Guida Completa NVIDIA DLSS 4.5
-
 <div align="center">
-
-![DLSS 4.5](https://img.shields.io/badge/DLSS-4.5-76B900?style=for-the-badge&logo=nvidia&logoColor=white)
-![Driver](https://img.shields.io/badge/Driver-591.74-FF9900?style=for-the-badge)
-![License](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)
-
-**Guida tecnica completa ai preset DLSS 4.5, configurazione avanzata e ottimizzazione per RTX 20/30/40/50 series**
-
-[📖 Visualizza Guida](https://primebuild-pc.github.io/guida-completa-nvidia-dlss-4.5/) • [💬 Discord](https://discord.gg/jBNk2vXKKd) • [📸 Instagram](https://www.instagram.com/prime_build_/)
-
----
+  <img src="readme-banner.svg" alt="Guida completa NVIDIA DLSS 4.5" width="100%">
+  <p><strong>Preset DLSS 4.5, Profile Inspector e ottimizzazione per RTX 20/30/40/50.</strong></p>
+  <p>
+    <a href="https://github.com/PrimeBuild-pc/guida-completa-nvidia-dlss-4.5/commits/main"><img alt="Last commit" src="https://img.shields.io/github/last-commit/PrimeBuild-pc/guida-completa-nvidia-dlss-4.5?style=plastic&amp;logo=git&amp;logoColor=white"></a>
+    <a href="https://github.com/PrimeBuild-pc/guida-completa-nvidia-dlss-4.5/stargazers"><img alt="GitHub stars" src="https://img.shields.io/github/stars/PrimeBuild-pc/guida-completa-nvidia-dlss-4.5?style=plastic&amp;logo=github"></a>
+    <a href="https://github.com/PrimeBuild-pc/guida-completa-nvidia-dlss-4.5/issues"><img alt="Open issues" src="https://img.shields.io/github/issues/PrimeBuild-pc/guida-completa-nvidia-dlss-4.5?style=plastic&amp;logo=github"></a>
+  </p>
+  <p>
+    <a href="https://primebuild-pc.github.io/guida-completa-nvidia-dlss-4.5/"><img alt="GitHub Pages" src="https://img.shields.io/badge/GitHub%20Pages-leggi%20la%20guida-2ea44f?style=plastic&amp;logo=github"></a>
+    <img alt="Italian" src="https://img.shields.io/badge/lingua-Italiano-008C45?style=plastic&amp;logo=googletranslate&amp;logoColor=white">
+    <img alt="NVIDIA DLSS 4.5" src="https://img.shields.io/badge/NVIDIA%20DLSS-4.5-76B900?style=plastic&amp;logo=nvidia&amp;logoColor=white">
+    <img alt="Driver 591.74 or newer" src="https://img.shields.io/badge/driver-591.74%2B-f59e0b?style=plastic">
+    <a href="LICENSE"><img alt="MIT license" src="https://img.shields.io/badge/license-MIT-2ea44f?style=plastic"></a>
+  </p>
+  <p><a href="https://primebuild-pc.github.io/guida-completa-nvidia-dlss-4.5/">📖 Visualizza guida</a> · <a href="https://discord.gg/jBNk2vXKKd">💬 Discord</a> · <a href="https://www.instagram.com/prime_build_/">📸 Instagram</a></p>
 
 </div>
+
+---
 
 ## 📋 Contenuti
 
